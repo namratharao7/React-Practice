@@ -3,11 +3,14 @@ import './App.css';
 import Greet from './components/Greet';
 import Hello from './components/Hello';
 import Welcome from './components/Welcome';
+import Message from './components/Message';
 
 function App() {
   return (
     <div className="App">
-      <Greet name="Khaleesi" actorName="Emilia Clarke">
+      <Message />
+
+      {/* <Greet name="Khaleesi" actorName="Emilia Clarke">
         <p>
           This is the queen
         </p>
@@ -19,7 +22,7 @@ function App() {
 
       <Welcome name="Khaleesi" actorName="Emilia Clarke"/>
       <Welcome name="Jon Snow" actorName="Kit Harrington"></Welcome>
-      <Welcome name="Arya Stark" actorName="Maise Williams"/>
+      <Welcome name="Arya Stark" actorName="Maise Williams"/> */}
 
       {/* <Hello/> */}
     </div>
