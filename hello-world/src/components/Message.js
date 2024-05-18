@@ -10,16 +10,22 @@ class Message extends Component {
     }
 
     changeMessage() {
-        this.setState({
-            message: 'Thank you'
-        })
+        if (this.state.message === 'Welcome') {
+            this.setState({
+                message: 'Thank you'
+            })
+        } else {
+            this.setState({
+                message: 'Welcome'
+            })
+        }
     }
 
     render() {
         return (
             <div>
                 <h1>{this.state.message}</h1>
-                <button onClick={() => this.changeMessage()}>Subscribe</button>
+                <button onClick={() => this.changeMessage()}>Toggle Message</button>
             </div>
         )
     }
